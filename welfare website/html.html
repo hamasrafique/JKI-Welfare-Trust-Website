@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Slider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px 0;
+        }
+
+        #H2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            flex-shrink: 0;
+            width: 250px;
+            margin: 0 10px;
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .slider-item {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider-item {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slider-item {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <h2 style="text-align: center;" id="H2">Our Team</h2>
+        <div class="slider-track" id="sliderTrack">
+            <div class="slider-item"><img src="Pi7_Passport_Photo (7).jpeg" alt="Image 2"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (6).jpeg" alt="Image 3"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (5).jpeg" alt="Image 4"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (4).jpeg" alt="Image 1"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (1).jpeg" alt="Image 2"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (2).jpeg" alt="Image 3"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (3).jpeg" alt="Image 4"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (8).jpeg" alt="Image 4"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (9).jpeg" alt="Image 4"></div>
+            <div class="slider-item"><img src="Pi7_Passport_Photo (10).jpeg" alt="Image 4"></div>
+        </div>
+    </div>
+
+    <script>
+        const sliderTrack = document.getElementById('sliderTrack');
+        let currentIndex = 0;
+
+        function slide() {
+            currentIndex++;
+            if (currentIndex >= sliderTrack.children.length) {
+                currentIndex = 0;
+            }
+            const itemWidth = sliderTrack.children[currentIndex].clientWidth;
+            sliderTrack.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`; // Adjusted for margin
+        }
+
+        setInterval(slide, 2000); // Slides every 2 seconds
+    </script>
+</body>
+</html>

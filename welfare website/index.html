@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKI Welfare Trust</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+      .slider-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px 0;
+        }
+
+        #H2 {
+            margin-bottom: 20px;
+            color: rgb(43 110 68);
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            flex-shrink: 0;
+            width: 250px;
+            margin: 0 10px;
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .slider-item {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider-item {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slider-item {
+                width: 120px;
+            }
+        }
+        .video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0; /* Remove top padding */
+}
+
+.video-container iframe {
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    height: 50%; /* Set the height to 50% */
+    border: none;
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+    }
+
+    .video-container iframe {
+        height: 50%; /* Maintain height at 50% */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;
+    }
+
+    .video-container iframe {
+        height: 50%; /* Maintain height at 50% */
+    }
+}
+
+/* Add the animation keyframes */
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Apply the animation to the text */
+/* .jki-news {
+    white-space: nowrap; 
+    display: inline-block;
+    font-size: 24px;
+    animation: slide-right-to-left 20s linear infinite;
+} */
+@media (min-width: 1024px) {
+    .media-item {
+        flex: 1 1 calc(33.33% - 40px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .media-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .media-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .media-item {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+/* @media (max-width: 480px) {
+    .jki-news {
+        font-size: 14px; 
+        animation-duration: 15s; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .jki-news {
+        font-size: 18px;  
+        animation-duration: 12s; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .jki-news {
+        font-size: 20px; 
+        animation-duration: 10s; 
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .jki-news {
+        font-size: 24px;  
+        animation-duration: 8s; 
+    }
+} */
+
+
+
+    </style>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <div class="logo-heading">
+            <h1>JAZBA-E-KHIDMAT-E-INSANIYAT WELFARE TRUST &reg;</h1>
+        </div>
+    </div>
+  <ul class="nav-links">
+    <li><a href="OurProjects.html">Our Projects</a></li>
+    <li><a href="ourteam.html">Our Team</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li><a href="contactUs.html">Contact Us</a></li>
+    <li><a href="donateus.html">Donate Us</a></li>
+  </ul>
+
+
+  <div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div> <br>
+  <!-- <div class="jki-news ">
+    kldjhngjkvshdfnbvjnvjnhdfkdhvl
+</div> -->
+
+ 
+  <div class="slider" style="background-color:rgb(43 110 68);">
+    <div class="slide-track">
+     <div class="slide"><img src="1.jpg" alt="Image 1"> </div>
+     <div class="slide"><img src="2.jpg" alt="Image 2"> </div>
+     <div class="slide"><img src="3.jpg" alt="Image 3"></div>
+     <div class="slide"><img src="4.jpg" alt="Image 4"> </div>
+     <div class="slide"><img src="5.jpg" alt="Image 5"> </div>
+     <div class="slide"><img src="6.jpg" alt="Image 6"></div>
+     <div class="slide"><img src="7.jpg" alt="Image 7"> </div>
+     <div class="slide"><img src="8.jpg" alt="Image 8"></div>
+     <div class="slide"><img src="11.jpg" alt="Image 9"></div>
+     <div class="slide"><img src="9.jpg"Image 10"></div>
+     <div class="slide"><img src="10.jpg" alt="Image 11"></div>
+ </div>
+  </div>
+  <br>
+<div class="container" >
+    <div class="donation-container">
+        <h2>Make a Donation</h2>
+        <form action="process_donation.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">Choose Payment Method:</label>
+            <select id="payment-method" name="payment_method" required>
+                <option value="">Select...</option>
+                <option value="easypaisa">EasyPaisa</option>
+                <option value="jazzcash">JazzCash</option>
+                <option value="bank">Bank Transfer</option>
+            </select>
+
+            <div id="easypaisa-details" class="payment-details">
+                <h3>EasyPaisa Payment</h3>
+                <p>Send your donation to the following EasyPaisa number:</p>
+                <p><strong>0345-1234567</strong></p>
+            </div>
+
+            <div id="jazzcash-details" class="payment-details">
+                <h3>JazzCash Payment</h3>
+                <p>Send your donation to the following JazzCash number:</p>
+                <p><strong>0300-1234567</strong></p>
+            </div>
+
+            <div id="bank-details" class="payment-details">
+                <h3>Bank Transfer</h3>
+                <p>Bank Name: <strong>Your Bank</strong></p>
+                <p>Account Name: <strong>Your Account Name</strong></p>
+                <p>Account Number: <strong>123456789</strong></p>
+                <p>IBAN: <strong>PK00XXXXXXXXXX</strong></p>
+            </div>
+
+            <button type="submit">Donate Now</button>
+        </form>
+        <div id="confirmationMessage" style="display: none;">
+            <h2>Thank you for your donation!</h2>
+            <p>Your donation will make a positive impact.</p>
+        </div>
+    </div>
+    <div class="side-box"><a href="foundermsg.html">
+        <img src="mateen.jpeg" alt="Our Impact Image" style="border-radius: 35px;">
+        <h2 style="color: white; text-align: center;">Founder's Message </h2>
+        <p><b>As the founder of JKI Welfare Trust, I am deeply committed to our mission of making a tangible difference in the lives of those in need. Every step we take is guided by our belief in compassion, equality, and the power of community. Together, we can create lasting change and build a brighter future for all.</b></p>
+    </a> </div>
+</div>
+</div><br>
+<div class="hamas-container"><a href="ourteam.html">
+    <h2 style="text-align: center;" id="H2">Our Team</h2>
+    <div class="hamas-track" id="hamasTrack">
+        <div class="hamas-item"><img src="mateen.jpeg" alt="Image 2"></div>
+        <div class="hamas-item"><img src="sher.jpeg" alt="Image 3"></div>
+        <div class="hamas-item"><img src="WhatsApp_Image_2022-10-24_at_1.08.58_PM-removebg-preview.png" alt="Image 3"></div>
+        <div class="hamas-item"><img src="hshs.jpeg" alt="Image 4"></div>
+        <div class="hamas-item"><img src="ehe.jpeg" alt="Image 4"></div>
+        <!-- <div class="hamas-item"><img src="Pi7_Passport_Photo (6).jpeg" alt="Image 3"></div>
+        <div class="hamas-item"><img src="Pi7_Passport_Photo (5).jpeg" alt="Image 4"></div>
+        <div class="hamas-item"><img src="Pi7_Passport_Photo (4).jpeg" alt="Image 1"></div>
+        <div class="hamas-item"><img src="Pi7_Passport_Photo (1).jpeg" alt="Image 2"></div>
+       
+       
+        
+        <div class="hamas-item"><img src="Pi7_Passport_Photo (9).jpeg" alt="Image 4"></div>
+        <div class="hamas-item"><img src="Pi7_Passport_Photo (10).jpeg" alt="Image 4"></div> -->
+    </div></a>
+</div>
+<div class="founderIntro">
+    <div class="content">
+        <div class="image-background" style="background-image: url(bg.jpeg );">
+            <div class="text-content">
+                <h2>Help is Our Main Goal</h2>
+                <p>JKI Welfare Organization is a non-profit committed to serving humanity without discrimination based on caste, creed, or color. We believe everyone deserves equal access to food, shelter, education, and healthcare. Our mission is to create a world where equality thrives and sustains.                </p>
+            </div>
+        </div>
+        <div class="about-section">
+            <h3>About JKI Welfare Trust</h3>
+            <h2>Charity Efforts Are For <span class="highlight">Happiness</span></h2>
+            <p>JKI began its journey in 2021, starting from a small camp focused on rescue and disaster management. Over time, it expanded its reach, establishing a robust infrastructure that now supports social services and welfare initiatives across the nation. Driven by a commitment to make a tangible difference, JKI has been tirelessly working to bring about positive change.</p>
+            <p>We are Distributing <span class="highlight">Free Rations,Iftaar Drives,Clothes</span></p>
+        </div>
+</div>
+</div>
+<br>
+ <div class="sponsors-container">
+        <h2>Our <span class="highlight">Sponsors</span></h2>
+        <div class="sponsors-logos">
+            <img src="spon.jpg" alt="Paymob">
+            <img src="logo.jpg" alt="Unilever">
+            <img src="logo.jpg" alt="Surmawala">
+            <img src="logo.jpg" alt="SSGC">
+            <img src="logo.jpg" alt="NIFT ePay">
+            <!-- <img src="download.png" alt="Mehran">
+            <img src="download.png" alt="JazzCash">
+            <img src="download.png" alt="Haveli">
+            <img src="download.png" alt="GFS"> -->
+        </div>
+    </div><br>
+
+    <!-- <div class="video-container">
+        <iframe src="" title="Sponsor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Us</h3>
+              <p>Email: <a href="support@jkiwelfaretrust.org">support@jkiwelfaretrust.org</a></p>
+              <p>Email: <a href="info@jkiwelfaretrust.pk">info@jkiwelfaretrust.pk</a></p>
+              <p>Phone: +92 3153323890</p>
+              <p>Phone: +92 3128377805</p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Us</h3>
+              <p><a href="https://www.facebook.com/jkiwelfartrust">Facebook</a></p>
+              <p><a href="https://twitter.com/couriermgmt">Twitter</a></p>
+              <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2FJKIwelfaretrust%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR25aH_mpXdcErB2U2vvfFze0MXfWQhtwNuLxLRt3ZyX72DqFljYlDYi9mg_aem_Nmya7jZEPJTfPugwOGxTlw&h=AT3P1FxnUuw5plrzhen6nWBB1fpKGLwfJCnmbM5YUynK0fbUAUanK7ISNBOXM3jmQu9pjE8k6WevCteBtVYX0t2zyP9dvURs3YZX8upYaaZ2TM2E77x25vZuNTA6qaq0_uss">LinkedIn</a>
+              </p>
+          </div>
+          <div class="footer-section">
+              <h3>Office Address</h3>
+              <p>M14,Mezzanine floor</p>
+              <p>Hermain Tower,Main Jouhar Morr</p>
+              <p>Gulistan-e-Jouhar block 19</p>
+              <p>Karachi</p>
+              <p>Pakistan</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 JKI WELFARE TRUST. All rights reserved.</p>
+        
+      </div>
+  </div>
+</footer>    
+<script>
+    const hamasTrack = document.getElementById('hamasTrack');
+        let currentIndex = 0;
+
+        function slide() {
+            currentIndex++;
+            if (currentIndex >= hamasTrack.children.length) {
+                currentIndex = 0;
+            }
+            const itemWidth = hamasTrack.children[currentIndex].clientWidth;
+            hamasTrack.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`; // Adjusted for margin
+        }
+
+        setInterval(slide, 2000); // Slides every 2 seconds
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        burger.classList.toggle('active');
+    });
+});
+
+       
+const container = document.getElementById('container');
+const confirmationMessage = document.getElementById('confirmationMessage');
+
+container.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Perform form validation here
+
+    // Simulate form submission (replace with actual submission logic)
+    confirmationMessage.style.display = 'block';
+    container.style.display = 'none';
+});
+
+const slider = document.querySelector('.slider-content');
+
+function startScroll() {
+    slide.style.animationPlayState = 'running';
+}
+
+function stopScroll() {
+    slide.style.animationPlayState = 'paused';
+}
+
+function startScroll() {
+    document.querySelector('.slider-track').style.animationPlayState = 'running';
+  }
+  
+  function stopScroll() {
+    document.querySelector('.slider-track').style.animationPlayState = 'paused';
+  }
+
+
+  
+document.getElementById('payment-method').addEventListener('change', function () {
+    var easypaisaDetails = document.getElementById('easypaisa-details');
+    var jazzcashDetails = document.getElementById('jazzcash-details');
+    var bankDetails = document.getElementById('bank-details');
+
+    // Hide all details initially
+    easypaisaDetails.style.display = 'none';
+    jazzcashDetails.style.display = 'none';
+    bankDetails.style.display = 'none';
+
+    // Show the selected payment method details
+    if (this.value === 'easypaisa') {
+        easypaisaDetails.style.display = 'block';
+    } else if (this.value === 'jazzcash') {
+        jazzcashDetails.style.display = 'block';
+    } else if (this.value === 'bank') {
+        bankDetails.style.display = 'block';
+    }
+});
+
+</script>
+
+
+</body>
+</html><nav>
+  

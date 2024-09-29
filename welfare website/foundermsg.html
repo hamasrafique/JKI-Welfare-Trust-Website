@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message from the Founder</title>
+    <link rel="stylesheet" href="foundermsg.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <div class="logo-heading">
+            <h1>JAZBA-E-KHIDMAT-E-INSANIYAT WELFARE TRUST &reg;</h1>
+        </div>
+    </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="OurProjects.html">Our Projects</a></li>
+    <li><a href="ourteam.html">Our Team</a></li>
+    <li><a href="contactUs.html">Contact Us</a></li>
+    <li><a href="donateus.html">Donate Us</a></li>
+  </ul>
+  <div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div> <br>
+
+    <div class="founder-message">
+        <div class="founder-info">
+            <img src="mateen.jpeg" alt="Founder Picture" class="founder-photo">
+            <div class="founder-text" style="text-align: justify;">
+                <h1>Message from the Founder</h1>
+                <p>
+                    Dear Friends and Supporters,
+                </p>
+                <p>
+                    I am honored to welcome you to the JKI Welfare Trust. Our mission is to uplift and empower communities by providing education, healthcare, and essential resources to those in need. As the founder of this trust, I am deeply committed to the vision of a world where every individual has the opportunity to thrive and lead a fulfilling life.
+                </p>
+                <p>
+                    At JKI Welfare Trust, we believe that positive change starts with compassion and action. We are dedicated to addressing the most pressing needs within our communities, from ensuring access to quality education and healthcare to providing food and essential supplies. Each initiative we undertake is driven by a commitment to creating lasting impact and fostering a culture of giving and support.
+                </p>
+                <p>
+                    Our work would not be possible without the unwavering support of our dedicated team, volunteers, and donors. Your contributions and involvement make a profound difference in the lives of those we serve, and for that, we are profoundly grateful. Together, we can continue to build a brighter future for individuals and families in need.
+                </p>
+                <p>
+                    Thank you for being a part of our journey. We look forward to your continued support and partnership as we strive to make a meaningful difference in the world.
+                </p>
+                <p>
+                    Sincerely,<br>
+                    Syed Mateen<br>
+                    Founder, JKI Welfare Trust
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="hamas-container">
+    <h2 style="text-align: center;" id="H2">Some Clicks From Welfare Events Attended By Founder Mr Syed Mateen Raza</h2>
+        <div class="hamas-track" id="hamasTrack">
+            <div class="hamas-item"><img src="iska.jpg" alt="Image 2"></div>
+            <div class="hamas-item"><img src="uska.jpg" alt="Image 3"></div>
+            <div class="hamas-item"><img src="mera.jpg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="wo.jpg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="ye.jpg" alt="Image 3"></div>
+            <div class="hamas-item"><img src="heheheh.jpg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="nhi.jpg" alt="Image 1"></div>
+            <div class="hamas-item"><img src="he.jpg" alt="Image 2"></div>
+            <div class="hamas-item"><img src="heh.jpg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="isla.jpg" alt="Image 4"></div>
+         <div class="hamas-item"><img src="fp.JPG" alt="Image 3"></div>
+         <div class="hamas-item"><img src="fpp.jpg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="fpppp.jpg" alt="Image 1"></div>
+              <!-- <div class="hamas-item"><img src="Pi7_Passport_Photo (1).jpeg" alt="Image 2"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (9).jpeg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (10).jpeg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (8).jpeg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (6).jpeg" alt="Image 3"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (5).jpeg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (4).jpeg" alt="Image 1"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (1).jpeg" alt="Image 2"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (9).jpeg" alt="Image 4"></div>
+            <div class="hamas-item"><img src="Pi7_Passport_Photo (10).jpeg" alt="Image 4"></div> -->
+        </div>
+    </div><br><br>
+    
+    <script>
+      const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('active');
+});
+
+           const hamasTrack = document.getElementById('hamasTrack');
+        let currentIndex = 0;
+
+        function slide() {
+            currentIndex++;
+            if (currentIndex >= hamasTrack.children.length) {
+                currentIndex = 0;
+            }
+            const itemWidth = hamasTrack.children[currentIndex].clientWidth;
+            hamasTrack.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`; // Adjusted for margin
+        }
+
+        setInterval(slide, 2000); // Slides every 2 seconds
+   
+   </script>
+</body>
+</html>
